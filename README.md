@@ -1,93 +1,65 @@
 
+# 🛡️ SentryLure: AI-Based Phishing Detection System
 
-# 🛡️ PhishBuster: AI-Based Phishing Detection System
-
-PhishBuster is an AI-powered phishing detection tool designed to help users identify and avoid fraudulent websites, emails, and messages. It uses machine learning and natural language processing (NLP) to classify URLs and text as phishing or safe with high accuracy.
-
----
+**SentryLure** is an intelligent phishing detection tool designed to help users identify and avoid fraudulent emails, websites, and messages attempting to steal sensitive information. Using natural language processing (NLP) and machine learning techniques, SentryLure detects suspicious content with high accuracy.
 
 ## 🚀 Features
 
-- ✅ Real-time phishing detection
-- 🔍 URL and text input analysis
-- 🧠 Trained ML model on phishing datasets
-- 🖥️ Simple and interactive web interface
-- 📦 Easily integrable into browsers or email clients
+- Detects phishing in email texts, messages, and URLs
+- Trained on real-world phishing datasets
+- Fast, lightweight, and user-friendly interface
+- Real-time detection with clear threat categorization
 
----
+## 🧠 How It Works
 
-## 🛠️ Tech Stack
+1. Input suspicious text or URL
+2. Preprocessing and feature extraction
+3. Machine learning model classifies as **phishing** or **safe**
+4. Outputs prediction with optional threat explanation
 
-- Python 3
+## 🧰 Tech Stack
+
+- Python
 - Scikit-learn / XGBoost
-- Pandas, NumPy
-- Streamlit / Flask (for UI)
-- Joblib / Pickle (for model storage)
-
----
+- Pandas & NumPy
+- Flask / Gradio (for interface)
+- Jupyter (for training notebook)
 
 ## 📁 Project Structure
 
 ```
 
-PhishBuster/
-├── data/                # Datasets used for training
-├── models/              # Trained ML models
-├── app.py               # Web app interface
-├── train\_model.ipynb    # Model training notebook
-├── utils.py             # Helper functions
-├── README.md            # Project overview
+SentryLure/
+├── data/                 # Raw and preprocessed datasets
+├── models/               # Saved ML models
+├── app.py                # Inference app script
+├── train\_model.ipynb     # Model training notebook
+├── utils.py              # Helper functions for preprocessing
+├── README.md             # Project overview
 
 ```
 
----
+## 🧪 Example Use Case
 
-## ⚙️ How It Works
+Input:  
+> "Your account has been flagged. Log in now to verify your identity: http://secure-login-update.com"
 
-1. Input a suspicious URL or message into the web interface.
-2. PhishBuster extracts features using custom rules and NLP.
-3. The ML model predicts whether it’s phishing or safe.
-4. The result is shown to the user with a confidence score.
-
----
-
-## 📚 Dataset
-
-Used datasets such as:
-- [Phishing Website Dataset](https://www.kaggle.com/datasets/eswarchandt/phishing-website-detector)
-- [Email Phishing Datasets](https://www.kaggle.com/datasets)
-
----
-
-## 🚦 Example Use Cases
-
-- ✅ A user checks if an unknown link is safe before clicking.
-- 📧 Email service providers can use it to flag malicious emails.
-- 🛡️ Companies can integrate it for employee security awareness.
-
----
+Output:  
+> 🚨 Phishing detected! ⚠️ Be cautious — suspicious URL and urgent language.
 
 ## 📈 Future Scope
 
-- Browser extension integration
-- Real-time email scanning
-- SMS phishing (smishing) detection
-- Dashboard for phishing trends
+- Browser extension for real-time URL scanning
+- Integration into email clients
+- Multilingual phishing detection
+- Deep learning upgrades for adaptive threat detection
+
+## 👨‍💻 Author
+
+Built by [Rohan C Anish](https://github.com/rohancanish) — combining cybersecurity awareness and AI to create safer digital experiences.
 
 ---
 
-## 👤 Author
-
-**Rohan C Anish**  
-[GitHub: rohancanish](https://github.com/rohancanish)
-
----
-
-## 📄 License
-
-This project is open-source under the [MIT License](LICENSE).
-
----
-
+🔒 Stay aware. Stay secure. Let **SentryLure** be your digital phishing shield.
 ```
 
