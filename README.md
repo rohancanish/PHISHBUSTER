@@ -79,7 +79,6 @@ Used datasets such as:
 ## 👤 Author
 
 **Rohan C Anish**  
-Intern @ Emvigo Technologies  
 [GitHub: rohancanish](https://github.com/rohancanish)
 
 ---
